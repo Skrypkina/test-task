@@ -225,7 +225,7 @@ html {
     top: 24%;
     left: 36%;
     opacity: 0.8;
-    animation: 1s ease-in-out 0s 1 formLayout;
+    animation: 2s ease-in-out 0s 1 formLayout;
   }
   .form-title {
     padding: 0;
@@ -332,9 +332,14 @@ html {
 
 @keyframes formLayout {
   0% {
-    transform: rotateX(50deg);
+    transform: rotateX(-50deg);
   }
-
+  50% {
+    transform: rotateX(0deg);
+  }
+  75% {
+    transform: rotateX(20deg);
+  }
   100% {
     transform: rotateX(0);
   }
